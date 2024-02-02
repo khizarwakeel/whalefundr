@@ -1,5 +1,4 @@
 "use client";
-
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import Logo from "/public/assets/logo.png";
@@ -152,11 +151,28 @@ export default function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <Disclosure as="div" className="-mx-3">
+                <div className="flex justify-between">
+                  <button className="bg-[#2176B9] w-12 h-12 rounded-full flex justify-center items-center">
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.2939 12.5786H13.3905L13.0703 12.2699C14.2297 10.9251 14.8669 9.20834 14.8656 7.43282C14.8656 5.96275 14.4297 4.52569 13.613 3.30337C12.7963 2.08105 11.6354 1.12837 10.2772 0.565793C8.91907 0.00322052 7.42457 -0.143974 5.98275 0.142823C4.54092 0.42962 3.21652 1.13753 2.17702 2.17702C1.13753 3.21652 0.42962 4.54092 0.142823 5.98275C-0.143974 7.42457 0.00322052 8.91907 0.565793 10.2772C1.12837 11.6354 2.08105 12.7963 3.30337 13.613C4.52569 14.4297 5.96275 14.8656 7.43282 14.8656C9.27387 14.8656 10.9663 14.191 12.2699 13.0703L12.5786 13.3905V14.2939L18.2962 20L20 18.2962L14.2939 12.5786ZM7.43282 12.5786C4.58548 12.5786 2.28702 10.2802 2.28702 7.43282C2.28702 4.58548 4.58548 2.28702 7.43282 2.28702C10.2802 2.28702 12.5786 4.58548 12.5786 7.43282C12.5786 10.2802 10.2802 12.5786 7.43282 12.5786Z"
+                        fill="#F0F0F0"
+                      />
+                    </svg>
+                  </button>
+                  <CountryList country="Eng" image={ukLogo} />
+                </div>
+                <Disclosure as="div" className="-mx-3 pt-5">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
-                        Product
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base leading-7">
+                        How it works
                         <ChevronDownIcon
                           className={classNames(
                             open ? "rotate-180" : "",
@@ -168,7 +184,7 @@ export default function Header() {
                       <Disclosure.Panel className="mt-2 space-y-2">
                         <Disclosure.Button
                           as="a"
-                          className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 hover:bg-gray-50"
+                          className="block rounded-lg py-2 pl-6 pr-3 text-sm leading-7"
                         >
                           1
                         </Disclosure.Button>
@@ -178,29 +194,33 @@ export default function Header() {
                 </Disclosure>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7"
                 >
-                  Features
+                  FAQ
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7"
                 >
-                  Marketplace
+                  FAQ
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 hover:bg-gray-50"
                 >
-                  Company
+                  Testimonials
                 </a>
-              </div>
-              <div className="py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 hover:bg-gray-50"
                 >
-                  Log in
+                  Trading
+                </a>
+                <a
+                  href="#"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 hover:bg-gray-50"
+                >
+                  About Us
                 </a>
               </div>
             </div>
