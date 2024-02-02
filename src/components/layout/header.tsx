@@ -16,7 +16,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-gradient-to-r from-[#121212] to-[#142532]">
+    <header className="bg-transparent">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -55,7 +55,7 @@ export default function Header() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute bg-gray-800 text-white pt-5 text-center -left-8 top-full z-10 mt-3 max-w-56 w-screen overflow-hidden bg-inherit shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute bg-[#152a3b] text-white pt-5 text-center -left-8 top-full z-10 mt-3 max-w-56 w-screen overflow-hidden bg-inherit shadow-lg ring-1 ring-gray-900/5">
                 <ul className="">
                   <li className="mb-5">1</li>
                   <li className="mb-5">2</li>
@@ -65,10 +65,10 @@ export default function Header() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <a href="#" className="text-sm font-semibold leading-6">
+          <a href="" className="text-sm font-semibold leading-6">
             FAQ
           </a>
-          <a href="#" className="text-sm font-semibold leading-6">
+          <a href="" className="text-sm font-semibold leading-6">
             Testimonials
           </a>
           <Popover className="relative">
@@ -89,7 +89,7 @@ export default function Header() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute bg-gray-800 text-white pt-5 text-center -left-8 top-full z-10 mt-3 max-w-56 w-screen overflow-hidden bg-inherit shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute bg-[#152a3b] text-white pt-5 text-center -left-8 top-full z-10 mt-3 max-w-56 w-screen overflow-hidden bg-inherit shadow-lg ring-1 ring-gray-900/5">
                 <ul className="">
                   <li className="mb-5">1</li>
                   <li className="mb-5">2</li>
