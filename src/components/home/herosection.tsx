@@ -4,7 +4,6 @@ const Herosection = () => {
   return (
     <Wrapper>
     <div className="text-white">
-      Home
     </div>
     </Wrapper>
   )
