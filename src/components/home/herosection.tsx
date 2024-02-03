@@ -7,9 +7,9 @@ import Peoples from "/public/assets/peoples.png";
 const Herosection = () => {
   return (
     <Wrapper>
-      <section className="text-white lg:mt-0 md:mt-8 mt-4">
+      <section className="text-white lg:mt-0 md:mt-8 mt-4 relative">
         <div className="grid lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-          <div className="mr-auto lg:col-span-7">
+          <div className="mr-auto lg:col-span-7 lg:mt-8 md:mt-0">
             <h2 className="text-[#2176B9] font-bold">SINCE 2024</h2>
             <h1 className="max-w-2xl mb-4 text-2xl mt-4 lg:leading-[3.5rem] xl:leading-[4.5rem] font-medium md:text-5xl xl:text-6xl dark:text-white">
               WE ARE LOOKING FOR PROFITABLE TRADERS
@@ -46,7 +46,7 @@ const Herosection = () => {
             <Image
               src={Phone}
               alt="Phone"
-              className="w-full lg:h-[36.5rem] object-contain"
+              className="w-full lg:h-[36.5rem] object-contain z-0"
             />
           </div>
         </div>

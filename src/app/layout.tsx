@@ -21,7 +21,6 @@ export default function RootLayout({
         className={inter.className}
         style={{
           backgroundImage: "url('/assets/bg-Image.png')",
-          height: "100vh",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
