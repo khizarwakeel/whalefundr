@@ -5,7 +5,7 @@ import Logo from "/public/assets/logo.png";
 import ukLogo from "/public/assets/ukLogo.png";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import CountryList from "../resuseComp/countryList";
 
 function classNames(...classes: string[]): string {
@@ -55,7 +55,7 @@ export default function Header() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute bg-[#152a3b] text-white pt-5 text-center -left-8 top-full z-10 mt-3 max-w-56 w-screen overflow-hidden bg-inherit shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute bg-slate-900 border z-40 text-white pt-5 text-center -left-8 top-full mt-3 max-w-56 w-screen overflow-hidden bg-inherit shadow-lg ring-1 ring-gray-900/5">
                 <ul className="">
                   <li className="mb-5">1</li>
                   <li className="mb-5">2</li>
@@ -89,7 +89,7 @@ export default function Header() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute bg-[#152a3b] text-white pt-5 text-center -left-8 top-full z-10 mt-3 max-w-56 w-screen overflow-hidden bg-inherit shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute bg-slate-900 border text-white pt-5 text-center -left-8 top-full z-10 mt-3 max-w-56 w-screen overflow-hidden bg-inherit shadow-lg ring-1 ring-gray-900/5">
                 <ul className="">
                   <li className="mb-5">1</li>
                   <li className="mb-5">2</li>
@@ -122,7 +122,7 @@ export default function Header() {
             </svg>
           </button>
           <div>
-            <CountryList country="Eng" image={ukLogo} />
+            <CountryList country="Eng" image={ukLogo as StaticImageData} bgColor="bg-[#2176b9]" textColor="text-white" />
           </div>
         </div>
       </nav>

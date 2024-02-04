@@ -6,8 +6,8 @@ import Peoples from "/public/assets/peoples.png";
 
 const Herosection = () => {
   return (
-    <Wrapper>
-      <section className="text-white lg:mt-0 md:mt-8 mt-4 relative">
+    <section className="text-white lg:mt-0 md:mt-8 mt-4 relative">
+      <Wrapper>
         <div className="grid lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto lg:col-span-7 lg:mt-8 md:mt-0">
             <h2 className="text-[#2176B9] font-bold">SINCE 2024</h2>
@@ -50,8 +50,8 @@ const Herosection = () => {
             />
           </div>
         </div>
-      </section>
-    </Wrapper>
+      </Wrapper>
+    </section>
   );
 };
 
