@@ -6,14 +6,14 @@ import Phone from "/public/assets/phone.png";
 
 const Footer = () => {
   return (
-    <section>
-      <footer className="">
+    <section className="mt-10 lg:mt-0">
+      <footer>
         <Wrapper>
           <div className="mx-auto w-full">
-            <div className="grid grid-cols-2 gap-12 px-4 py-6 lg:py-8 md:grid-cols-12">
-              <div className="col-span-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:py-8 lg:grid-cols-12 mb-10 lg:mb-0">
+              <div className="lg:col-span-6">
                 <Image src={Logo} alt="Logo" />
-                <ul className="text-gray-500 dark:text-gray-400 font-medium mt-5">
+                <ul className="text-gray-500 font-medium mt-5">
                   <li className="mb-4 text-white text-sm">
                     <a href="#" className=" hover:underline">
                       Animi distinctio quia amet possimus sit. Voluptatum sunt
@@ -40,11 +40,11 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="col-span-2">
-                <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
+              <div className="lg:col-span-2">
+                <h2 className="mb-6 text-sm font-semibold text-white uppercase ">
                   About us
                 </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <ul className="text-gray-500 font-medium">
                   <li className="mb- text-white">
                     <a href="#" className="hover:underline">
                       Evaluation Process
@@ -67,11 +67,11 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="col-span-2">
-                <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
+              <div className="lg:col-span-2">
+                <h2 className="mb-6 text-sm font-semibold text-white uppercase ">
                   Trading
                 </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <ul className="text-gray-500 font-medium">
                   <li className="mb- text-white">
                     <a href="#" className="hover:underline">
                       Evaluation Process
@@ -94,11 +94,11 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="col-span-2">
-                <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
+              <div className="lg:col-span-2">
+                <h2 className="mb-6 text-sm font-semibold text-white uppercase ">
                   App
                 </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <ul className="text-gray-500 font-medium">
                   <li className="mb- text-white">
                     <a href="#" className="hover:underline">
                       Evaluation Process
@@ -126,15 +126,12 @@ const Footer = () => {
         </Wrapper>
         <div className="bg-[#2176B9]">
           <Wrapper>
-            <div className="px-4 py-6 dark:bg-gray-700 md:flex md:items-center md:justify-between">
-              <span className="text-sm text-white dark:text-gray-300 sm:text-center">
+            <div className="py-6 flex md:flex-row flex-col items-center justify-between">
+              <span className="text-sm text-white 300 text-center">
                 © 2024 WhaleFundr. All Rights Reserved.
               </span>
               <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
-                <a
-                  href="#"
-                  className="text-white hover:text-gray-900 dark:hover:text-white"
-                >
+                <a href="#" className="text-white hover:text-gray-900">
                   <svg
                     className="w-4 h-4"
                     aria-hidden="true"
@@ -150,10 +147,7 @@ const Footer = () => {
                   </svg>
                   <span className="sr-only">Facebook page</span>
                 </a>
-                <a
-                  href="#"
-                  className="text-white hover:text-gray-900 dark:hover:text-white"
-                >
+                <a href="#" className="text-white hover:text-gray-900">
                   <svg
                     className="w-4 h-4"
                     aria-hidden="true"
@@ -165,10 +159,7 @@ const Footer = () => {
                   </svg>
                   <span className="sr-only">Discord community</span>
                 </a>
-                <a
-                  href="#"
-                  className="text-white hover:text-gray-900 dark:hover:text-white"
-                >
+                <a href="#" className="text-white hover:text-gray-900">
                   <svg
                     className="w-4 h-4"
                     aria-hidden="true"
@@ -184,10 +175,7 @@ const Footer = () => {
                   </svg>
                   <span className="sr-only">Twitter page</span>
                 </a>
-                <a
-                  href="#"
-                  className="text-white hover:text-gray-900 dark:hover:text-white"
-                >
+                <a href="#" className="text-white hover:text-gray-900">
                   <svg
                     className="w-4 h-4"
                     aria-hidden="true"
@@ -203,10 +191,7 @@ const Footer = () => {
                   </svg>
                   <span className="sr-only">GitHub account</span>
                 </a>
-                <a
-                  href="#"
-                  className="text-white hover:text-gray-900 dark:hover:text-white"
-                >
+                <a href="#" className="text-white hover:text-gray-900">
                   <svg
                     className="w-4 h-4"
                     aria-hidden="true"

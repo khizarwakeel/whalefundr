@@ -76,12 +76,12 @@ const Partners = () => {
         {/* Main Data Section */}
         <div className="mt-20">
           <div>
-            <h1 className="text-5xl font-semibold text-center leading-tight">
+            <h1 className="lg:text-5xl text-2xl md:text-3xl font-semibold text-center leading-tight">
               <span className="text-[#2176b9]">WhaleFundr</span> is one of the
               most reliable firms in modern prop trading industry.
             </h1>
           </div>
-          <div className="grid grid-cols-4 gap-5 mt-8">
+          <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-5 mt-8">
             {partnersData.map((item, index) => (
               <div
                 className="bg-[#F0F0F0] h-32 rounded-2xl flex justify-center items-center"
@@ -99,8 +99,8 @@ const Partners = () => {
           </div>
         </div>
         {/* Modern Prop  */}
-        <div className="grid grid-cols-2 mt-16 gap-10">
-          <div className="flex gap-5">
+        <div className="grid lg:grid-cols-2 grid-cols-1 mt-16 gap-10">
+          <div className="flex md:flex-row flex-col gap-5">
             {cardsDataProp.map((item, index) => (
               <div
                 className=" rounded-xl dark:bg-gray-800 dark:border-gray-700 h-full"
@@ -124,7 +124,7 @@ const Partners = () => {
             ))}
           </div>
           <div>
-            <h1 className="text-5xl font-bold leading-tight">
+            <h1 className="lg:text-5xl md:text-3xl text-2xl font-bold leading-tight">
               Trade for{" "}
               <span className="text-[#2176b9]">Modern Prop Trading </span>Firm
             </h1>
@@ -132,8 +132,8 @@ const Partners = () => {
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using Content here,
-              content here, making it look like readable English. Many desktop
+              distribution of letters, as opposed to using Content here, content
+              here, making it look like readable English. Many desktop
               publishing packages and web page editors now use Lorem Ipsum as
               their default model text, and a search for lorem ipsum will
               uncover

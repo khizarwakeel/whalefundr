@@ -32,10 +32,10 @@ const processData = [
 
 const EvaluationPro = () => {
   return (
-    <section className="bg-white py-10">
+    <section className="bg-white lg:py-10 py-5">
       <Wrapper>
         <div className="relative bg-[#F0F0F0] py-14 px-5 md:rounded-[4rem] rounded-3xl">
-          <div className="text-center text-5xl font-bold">
+          <div className="text-center lg:text-5xl text-2xl md:text-3xl font-bold">
             <h1>Evaluation Process</h1>
           </div>
           {/* Large Screen Process */}

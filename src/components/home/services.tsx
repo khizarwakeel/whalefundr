@@ -36,14 +36,11 @@ const servData = [
 
 const Services = () => {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white lg:py-20 py-10">
       <Wrapper>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-5">
           {servData.map((item, index) => (
-            <div
-              className="bg-[#F0F0F0] h-52 rounded-2xl px-7 py-6"
-              key={index}
-            >
+            <div className="bg-[#F0F0F0] rounded-2xl px-7 py-6" key={index}>
               <div>
                 <Image
                   src={item.image}
